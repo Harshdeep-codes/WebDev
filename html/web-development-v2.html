@@ -1,0 +1,708 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Complete Intro to Web Development, v2 | Frontend Masters</title>
+    <style>
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			font-size: 16px;
+			margin: 0;
+			padding: 30px;
+			background-color: #111;
+			color: #fff; 
+		}
+		
+		h2 {
+				background-color: #333;
+				color: #ccc;
+				padding: 10px;
+		}
+		h3 {
+			border-bottom: 1px solid #333;
+			padding-bottom: 6px;
+		}
+		
+		td {
+		 padding: 3px 0;
+					}
+					td a {
+							color: #ccc;
+							text-decoration: none;
+							padding-right: 20px;
+					}
+					td p {
+							display: inline;
+							margin: 0;
+							padding: 0px;
+					}
+					td p a {
+							color: #5baec0;
+							text-decoration: underline;
+					}
+					h1 a {
+							color: #5baec0;
+							text-decoration: none;
+					}
+					h3 a {
+							color: #5baec0;
+							text-decoration: none;
+					}
+					p a {
+							padding: 0px;
+					}
+					code {
+							background-color: #1e3134;
+							padding: 3px;
+			}
+    </style>
+  </head>
+  <body>
+    <h1><a href="https://frontendmasters.com/courses/web-development-v2/" target="_blank">Complete Intro to Web Development, v2</a></h1>
+    <h2>Introduction</h2>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/introducing-web-development" target="_blank">Introducing Web Development</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/introducing-web-development?t=17" target="_blank">00:00:17</a></td><td><p>bit.ly/intro-web-dev</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/tips-for-coding-success" target="_blank">Tips for Coding Success</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/tips-for-coding-success?t=332" target="_blank">00:05:32</a></td><td><p>Here&rsquo;s a link to <a href="https://stackoverflow.com/">StackOverflow</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/teacher-introduction" target="_blank">Teacher Introduction</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/teacher-introduction?t=58" target="_blank">00:00:58</a></td><td><p>Here&rsquo;s a link to <a href="http://frontendhappyhour.com/">Frontend Happy Hour</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/teacher-introduction?t=58" target="_blank">00:00:58</a></td><td><p>Tip: Feel free to tweet questions at <a href="https://twitter.com/holtbt">Brian on Twitter</a>! :)</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/teacher-introduction?t=100" target="_blank">00:01:40</a></td><td><p>Find Brian on <a href="https://www.instagram.com/briantholt/">Instagram</a>, <a href="https://github.com/btholt">Github</a>, or <a href="https://www.linkedin.com/in/btholt/">LinkedIn</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/teacher-introduction?t=262" target="_blank">00:04:22</a></td><td><p>Googleing things is  not stealing its a requirement</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/teacher-introduction?t=279" target="_blank">00:04:39</a></td><td><p>Every body is stealing we  have not created javascript etc but we are using</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/course-overview" target="_blank">Course Overview</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/course-overview?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/overview">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/course-overview?t=977" target="_blank">00:16:17</a></td><td><p>Here&rsquo;s a link to the <a href="https://frontendmasters.com/courses/git-in-depth/">Advanced Git Course</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools" target="_blank">Web Development Tools</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/tools">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=162" target="_blank">00:02:42</a></td><td><p><a href="https://www.mozilla.org/en-US/firefox/new/">Download Firefox</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=229" target="_blank">00:03:49</a></td><td><p>Here&rsquo;s a link for the specialized <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox browsers</a>, such as Firefox Nightly</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=295" target="_blank">00:04:55</a></td><td><p>Here&rsquo;s a link to <a href="https://code.visualstudio.com/">download Visual Studio Code</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=383" target="_blank">00:06:23</a></td><td><p>Here&rsquo;s a link to the site where you can check out <a href="https://marketplace.visualstudio.com/vscode?WT.mc_id=introtowebdev-github-brholt">Visual Studio Code extensions</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=395" target="_blank">00:06:35</a></td><td><p>Here&rsquo;s a link to <a href="https://www.sublimetext.com/">download Sublime</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=409" target="_blank">00:06:49</a></td><td><p>Here&rsquo;s a link to <a href="https://atom.io/">download Atom</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=469" target="_blank">00:07:49</a></td><td><p>Here&rsquo;s a link to <a href="https://www.jetbrains.com/webstorm/">check out Webstorm</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=703" target="_blank">00:11:43</a></td><td><p>Here&rsquo;s a link to <a href="https://www.iterm2.com/">download Iterm2</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=767" target="_blank">00:12:47</a></td><td><p>Heres a link to <a href="https://hyper.is/">download hyper</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=790" target="_blank">00:13:10</a></td><td><p>Here&rsquo;s a link to <a href="http://cmder.net/">download cmder</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=832" target="_blank">00:13:52</a></td><td><p>Link to <a href="https://www.gnu.org/software/bash/">download Bash</a> &amp; instructions to <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">enable Bash on Windows</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=844" target="_blank">00:14:04</a></td><td><p>Here&rsquo;s the link to <a href="https://fishshell.com/">download Fish</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=917" target="_blank">00:15:17</a></td><td><p>This is the official <a href="https://developer.mozilla.org/en-US/">MDN website</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=990" target="_blank">00:16:30</a></td><td><p>This is the <a href="https://css-tricks.com/">CSS Tricks website</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=1018" target="_blank">00:16:58</a></td><td><p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=1094" target="_blank">00:18:14</a></td><td><p>Here&rsquo;s a link to <a href="https://stackoverflow.com/">StackOverflow</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/web-development-tools?t=1114" target="_blank">00:18:34</a></td><td><p>Here&rsquo;s a link to the <a href="https://legacy.gitbook.com/book/frontendmasters/front-end-developer-handbook-2018/details">Frontend Developer Handbook for 2018</a></p>
+</td></tr>
+    </table>
+    <h2>Learning HTML</h2>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/basic-html" target="_blank">Basic HTML</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/basic-html?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/basic-html">course notes</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/html-elements" target="_blank">HTML Elements</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/html-image-form-and-table-elements" target="_blank">HTML Image, Form, and Table Elements</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-image-form-and-table-elements?t=660" target="_blank">00:11:00</a></td><td><p>Here&rsquo;s a link to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN HTML elements reference</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-image-form-and-table-elements?t=806" target="_blank">00:13:26</a></td><td><p>Further reading on Google&rsquo;s <a href="https://material.io/">Material Design</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/html-comments" target="_blank">HTML Comments</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/html-playground" target="_blank">HTML Playground</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-playground?t=5" target="_blank">00:00:05</a></td><td><p>Tip: Brian mentions <a href="https://codepen.io/">Codepen</a>, but this will be discussed later in the course</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-playground?t=89" target="_blank">00:01:29</a></td><td><p>Here&rsquo;s a link to a <a href="https://www.lipsum.com/">Lorem Ipsum generator</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-playground?t=418" target="_blank">00:06:58</a></td><td><p>Tip: jQuery is what is called a JavaScript Library, but this isn&rsquo;t important for what you will learn today</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-playground?t=439" target="_blank">00:07:19</a></td><td><p><a href="https://github.com/harvesthq/chosen">Chosen</a> is no longer under active development. Here&rsquo;s an <a href="https://github.com/selectize/selectize.js">alternative</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/html-attributes" target="_blank">HTML Attributes</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/html-class-attributes" target="_blank">HTML Class Attributes</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/html-id-attributes" target="_blank">HTML ID Attributes</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-id-attributes?t=341" target="_blank">00:05:41</a></td><td><p>Tip: Brian has opened up the Firefox developer tools.</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/naming-and-semantics" target="_blank">Naming and Semantics</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/meta-html" target="_blank">Meta HTML</a></h3>
+    <h2>Learning CSS</h2>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/introducing-css" target="_blank">Introducing CSS</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/introducing-css?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/basic-css">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/introducing-css?t=113" target="_blank">00:01:53</a></td><td><p>Check out our <a href="https://frontendmasters.com/learn/css/">CSS Learning Path</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/introducing-css?t=123" target="_blank">00:02:03</a></td><td><p>Sarah Drasner&rsquo;s <a href="https://frontendmasters.com/teachers/sarah-drasner/">Frontend Masters courses</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/introducing-css?t=129" target="_blank">00:02:09</a></td><td><p>Shirley Wu&rsquo;s <a href="https://frontendmasters.com/teachers/shirley-wu/">Frontend Masters Courses</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/css-rules" target="_blank">CSS Rules</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-rules?t=78" target="_blank">00:01:18</a></td><td><p>Here&rsquo;s a link for a <a href="https://meiert.com/en/indices/css-properties/">list of CSS properties</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-rules?t=188" target="_blank">00:03:08</a></td><td><p>Here&rsquo;s a link for more about <a href="https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/">Named Colors and Hex Equivalents</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-rules?t=195" target="_blank">00:03:15</a></td><td><p>Here&rsquo;s a link to <a href="https://css-tricks.com/nerds-guide-color-web/">A Nerd&rsquo;s Guide for Coloring on the Web</a> from CSS Tricks</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-rules?t=433" target="_blank">00:07:13</a></td><td><p><a href="https://css-tricks.com/the-lengths-of-css/">See this CSS Tricks article</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-rules?t=500" target="_blank">00:08:20</a></td><td><p>Tip: <code>em</code>&rsquo;s and <code>rem</code>&rsquo;s are discussed further in Frontend Masters&rsquo; <a href="https://frontendmasters.com/courses/responsive-typography/">Responsive Typography course</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/parents-and-children" target="_blank">Parents and Children</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/css-playground" target="_blank">CSS Playground</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-playground?t=5" target="_blank">00:00:05</a></td><td><p><a href="https://codepen.io/btholt/pen/ELaxOB">Brian&rsquo;s Codepen</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-playground?t=19" target="_blank">00:00:19</a></td><td><p>Tip: If your Codepen screen doesn&rsquo;t look quite right, you can change your viewport to look like Brian&rsquo;s using the &ldquo;Change View&rdquo; button located on the upper right of your screen, and then selecting the &ldquo;Editor Layout&rdquo; you prefer</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/css-selectors-and-the-cascade" target="_blank">CSS Selectors and The Cascade</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-selectors-and-the-cascade?t=6" target="_blank">00:00:06</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/selectors">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-selectors-and-the-cascade?t=82" target="_blank">00:01:22</a></td><td><p>The <a href="https://btholt.github.io/intro-to-web-dev-v2/html-next-steps#classes">section on classes</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/ids-and-important" target="_blank">IDs and !important</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/ids-and-important?t=430" target="_blank">00:07:10</a></td><td><p>Tip: The text turned from red to green because Brian deleted the <code>.nav-head-2</code> class off of the selector</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/ids-and-important?t=569" target="_blank">00:09:29</a></td><td><p>Frontend Master&rsquo;s course on <a href="https://frontendmasters.com/courses/chrome-dev-tools-v2/">Mastering Chrome Developer Tools</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/pseudo-classes" target="_blank">Pseudo-classes</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/pseudo-classes?t=426" target="_blank">00:07:06</a></td><td><p>Here&rsquo;s a link to the <a href="https://css-tricks.com/pseudo-class-selectors/">CSS Tricks article</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/pseudo-elements-and-wildcard-selector" target="_blank">Pseudo-elements and Wildcard Selector</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/pseudo-elements-and-wildcard-selector?t=41" target="_blank">00:00:41</a></td><td><p>Here&rsquo;s a link to the <a href="https://css-tricks.com/almanac/selectors/a/after-and-before/">CSS Tricks article on Pseudoelements</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/css-specificity-guide" target="_blank">CSS Specificity Guide</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-specificity-guide?t=26" target="_blank">00:00:26</a></td><td><p>Here&rsquo;s the Frontend Masters&rsquo; course, <a href="https://frontendmasters.com/courses/css-in-depth-v2/">CSS In-Depth, V2</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-specificity-guide?t=48" target="_blank">00:00:48</a></td><td><p>Here&rsquo;s a link to the <a href="http://www.standardista.com/css3/css-specificity/">CSS SpeciFISHity guide</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/css-box-model" target="_blank">CSS Box Model</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-box-model?t=6" target="_blank">00:00:06</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/layout-css">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-box-model?t=457" target="_blank">00:07:37</a></td><td><p>Here&rsquo;s the Frontend Master&rsquo;s course on <a href="https://frontendmasters.com/courses/css-grids-flexbox/">CSS Grids and Flexbox for Responsive Web Design</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-box-model?t=852" target="_blank">00:14:12</a></td><td><p>Here&rsquo;s a link to the <a href="https://www.paulirish.com/2012/box-sizing-border-box-ftw/">Article on using * { Box-sizing: Border-box }</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/css-floats-and-flexbox" target="_blank">CSS Floats and Flexbox</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-floats-and-flexbox?t=518" target="_blank">00:08:38</a></td><td><p>Here&rsquo;s the Frontend Masters&rsquo; course on <a href="https://frontendmasters.com/courses/css-grids-flexbox/">CSS Grids and Flexbox for Responsive Web Design</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-floats-and-flexbox?t=846" target="_blank">00:14:06</a></td><td><p>Tip: Brian deleted this bit of code because it was a mistake, and didn&rsquo;t affect the result.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-floats-and-flexbox?t=1486" target="_blank">00:24:46</a></td><td><p>Here&rsquo;s a link to the CSS Tricks&rsquo; <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guide to Flexbox</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/effective-patterns-for-coding-css" target="_blank">Effective Patterns for Coding CSS</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/effective-patterns-for-coding-css?t=6" target="_blank">00:00:06</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/css-patterns">course notes</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-1" target="_blank">HTML & CSS Project Exercise, Part 1</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-1?t=6" target="_blank">00:00:06</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/project-html-css">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-1?t=40" target="_blank">00:00:40</a></td><td><p>Tip: This is where you will use the code editor, such as VSCode, sublime, or Atom, Tip: This is where you will use the code editor, such as VSCode, sublime, or Atom, as mentioned in the Web Development Tools video</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-1?t=117" target="_blank">00:01:57</a></td><td><p>Tip: Brian hit &ldquo;CTRL-N&rdquo; (Windows), or &ldquo;SHIFT-COMMAND-N&rdquo; (Mac) to open a new file. If you prefer not to use the shortcuts, you can also access them via the File tab at the top left of your screen</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-1?t=142" target="_blank">00:02:22</a></td><td><p>Tip: Type <code>html:5</code> in an HTML file in VSCode to autocomplete basic HTML tags</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-1?t=252" target="_blank">00:04:12</a></td><td><p>Tip: It&rsquo;s &ldquo;CTRL-R&rdquo; in Windows. This is the same thing as refreshing the page.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-1?t=300" target="_blank">00:05:00</a></td><td><p>Here&rsquo;s more on Emmet from the <a href="https://frontendmasters.com/courses/visual-studio-code/emmet-html/">Visual Studio Code course</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-1?t=477" target="_blank">00:07:57</a></td><td><p>Here&rsquo;s a link to <a href="http://placecorgi.com/">Place Corgi</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-1?t=603" target="_blank">00:10:03</a></td><td><p>Here&rsquo;s a link to Brian&rsquo;s <a href="https://btholt.github.io/intro-to-web-dev-v2/news.html">completed project</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-1?t=693" target="_blank">00:11:33</a></td><td><p>Tip: This project will probably take you a few hours, so don&rsquo;t become frustrated if you don&rsquo;t immediately get it!</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-2" target="_blank">HTML & CSS Project Exercise, Part 2</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-2?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/project-html-css">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-2?t=367" target="_blank">00:06:07</a></td><td><p>Here&rsquo;s a link to <a href="https://fonts.google.com/">Google Fonts</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-2?t=547" target="_blank">00:09:07</a></td><td><p>Tip: Caching means to store data locally. In this case, it&rsquo;s on your browser.</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-exercise-part-2?t=843" target="_blank">00:14:03</a></td><td><p><a href="https://emmet.io">https://emmet.io</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-solution" target="_blank">HTML & CSS Project Solution</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-solution?t=8" target="_blank">00:00:08</a></td><td><p>Here&rsquo;s a link to Brian&rsquo;s <a href="https://btholt.github.io/intro-to-web-dev-v2/news.html">completed project</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/html-css-project-solution?t=284" target="_blank">00:04:44</a></td><td><p>Here&rsquo;s a link to the CSS Tricks&rsquo; <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guide to Flexbox</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/css-flexbox-resources" target="_blank">CSS Flexbox Resources</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-flexbox-resources?t=66" target="_blank">00:01:06</a></td><td><p>Here&rsquo;s a link to <a href="https://geddski.teachable.com/p/flexbox-zombies">Flexbox Zombies</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-flexbox-resources?t=95" target="_blank">00:01:35</a></td><td><p>Here&rsquo;s a link to <a href="https://flexboxfroggy.com/">Flexbox Froggy</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/css-flexbox-resources?t=124" target="_blank">00:02:04</a></td><td><p>This is the Frontend Masters&rsquo; course on <a href="https://frontendmasters.com/courses/css-grids-flexbox/">CSS Grids and Flexbox for Responsive Web Design</a></p>
+</td></tr>
+    </table>
+    <h2>Learning JavaScript</h2>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/programming-fundamentals" target="_blank">Programming Fundamentals</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/programming-fundamentals?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/programming-fundamentals">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/programming-fundamentals?t=925" target="_blank">00:15:25</a></td><td><p>Tip: Brian hit &ldquo;CTRL-O&rdquo; (Windows), or &ldquo;CMD-O&rdquo; (Mac) to open up his file explorer while in the browser</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/numbers-strings-and-booleans" target="_blank">Numbers, Strings, and Booleans</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/control-flow" target="_blank">Control Flow</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/control-flow?t=687" target="_blank">00:11:27</a></td><td><p>Tip: Brian is using a VSCode extension called &ldquo;Prettier&rdquo; that inserts the semicolons for him</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/loops" target="_blank">Loops</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/loops?t=578" target="_blank">00:09:38</a></td><td><p>Tip: Brian will talk more about scope later in the course</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/loops?t=889" target="_blank">00:14:49</a></td><td><p>Tip: The &ldquo;i&rdquo; has a background in the mathematics field</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/loops?t=1038" target="_blank">00:17:18</a></td><td><p>Here&rsquo;s the link to <a href="https://github.com/tonsky/FiraCode">FiraCode</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/learning-javascript-exercise" target="_blank">Learning JavaScript Exercise</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/learning-javascript-exercise?t=15" target="_blank">00:00:15</a></td><td><p>Here&rsquo;s <a href="https://codepen.io/btholt/pen/ELozBz">Brian&rsquo;s Codepen</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/learning-javascript-exercise?t=171" target="_blank">00:02:51</a></td><td><p>Tip: this is an example of an &ldquo;off by one&rdquo; error - they are extremely common</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/functions" target="_blank">Functions</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/functions?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/functions-and-scope">course notes</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/scope" target="_blank">Scope</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/scope-exercise" target="_blank">Scope Exercise</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/scope-exercise?t=5" target="_blank">00:00:05</a></td><td><p>Tip: You should use the rules you just learned in the &ldquo;Scope&rdquo; video to determine if the code will return undefined for each variable</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/scope-solution" target="_blank">Scope Solution</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/builtins" target="_blank">Builtins</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/builtins?t=75" target="_blank">00:01:15</a></td><td><p>Here&rsquo;s a link to the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects">MDN documentation</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/builtins?t=135" target="_blank">00:02:15</a></td><td><p>Here&rsquo;s the Frontend Masters&rsquo; <a href="https://frontendmasters.com/courses/visual-studio-code/">course on Visual Studio Code</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/builtins?t=145" target="_blank">00:02:25</a></td><td><p>Here&rsquo;s more <a href="https://www.typescriptlang.org/">information on TypeScript</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/objects" target="_blank">Objects</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/objects?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/objects-and-arrays">course notes</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/context" target="_blank">Context</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/context?t=149" target="_blank">00:02:29</a></td><td><p><a href="https://frontendmasters.com/teachers/kyle-simpson/">Kyle Simpson&rsquo;s courses</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/arrays" target="_blank">Arrays</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/arrays?t=940" target="_blank">00:15:40</a></td><td><p>Kyle Simpson&rsquo;s <a href="https://frontendmasters.com/courses/functional-javascript-v2/">Functional Lite course</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/arrays?t=943" target="_blank">00:15:43</a></td><td><p>Brian Lonsdorf&rsquo;s <a href="https://frontendmasters.com/courses/functional-javascript/">course on Hardcore Functional Programming</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/arrays?t=994" target="_blank">00:16:34</a></td><td><p>Bianca Gandolfo&rsquo;s <a href="https://frontendmasters.com/courses/js-fundamentals-functional-v2/">course on Fundamentals to Functional JS v2</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/document-object-model-dom" target="_blank">Document Object Model (DOM)</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/document-object-model-dom?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/dom">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/document-object-model-dom?t=281" target="_blank">00:04:41</a></td><td><p>Tip: API stands for Application Programming Interface, and Brian will talk more about it in a few minutes</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/events-and-listeners" target="_blank">Events and Listeners</a></h3>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/event-delegation" target="_blank">Event Delegation</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/event-delegation?t=259" target="_blank">00:04:19</a></td><td><p>Note: &ldquo;button&rdquo; should actually be &ldquo;BUTTON&rdquo;</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/event-delegation?t=289" target="_blank">00:04:49</a></td><td><p>Note: If you try to click this, and it doesn&rsquo;t work, use this <a href="https://codepen.io/frontendmasters/pen/ZMPqpX">CodePen</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-exercise" target="_blank">JavaScript, HTML, and CSS Exercise</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-exercise?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/js-project">course notes</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-solution-part-1" target="_blank">JavaScript, HTML, and CSS Solution, Part 1</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-solution-part-1?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-solution-part-1">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-solution-part-1?t=79" target="_blank">00:01:19</a></td><td><p>Tip: This is a shortcut to insert the boilerplate that we learned earlier</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-solution-part-1?t=253" target="_blank">00:04:13</a></td><td><p>Tip: Search for &ldquo;Character Map&rdquo; in your start menu if you are running Windows</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-solution-part-1?t=753" target="_blank">00:12:33</a></td><td><p>Here&rsquo;s a link to a <a href="https://webaim.org/resources/contrastchecker/">color contrast checker</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-solution-part-2" target="_blank">JavaScript, HTML, and CSS Solution, Part 2</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-solution-part-2?t=144" target="_blank">00:02:24</a></td><td><p>Steve Kinney&rsquo;s course on <a href="https://frontendmasters.com/courses/web-performance/">Web Performance</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-solution-part-2?t=1980" target="_blank">00:33:00</a></td><td><p><a href="https://github.com/btholt/intro-to-web-dev-v2/blob/master/static/calculator.css">calculator CSS solution</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-solution-part-2?t=1981" target="_blank">00:33:01</a></td><td><p><a href="https://github.com/btholt/intro-to-web-dev-v2/blob/master/static/calculator.html">calculator HTML solution</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/javascript-html-and-css-solution-part-2?t=1982" target="_blank">00:33:02</a></td><td><p><a href="https://github.com/btholt/intro-to-web-dev-v2/blob/master/static/calculator.js">calculator JavaScript solution</a></p>
+</td></tr>
+    </table>
+    <h2>Using Ajax and Node.js</h2>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/ajax" target="_blank">Ajax</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/ajax?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/ajax">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/ajax?t=140" target="_blank">00:02:20</a></td><td><p>Grab the code from <a href="https://btholt.github.io/intro-to-web-dev-v2/ajax">the course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/ajax?t=408" target="_blank">00:06:48</a></td><td><p>Here&rsquo;s the <a href="https://dog.ceo/dog-api/documentation/random">dog API documentation</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/ajax?t=551" target="_blank">00:09:11</a></td><td><p>Tip: if you write some CSS, make sure you add to your HTML file: <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;./yourFile.css&quot;&gt;</code>!</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/ajax?t=572" target="_blank">00:09:32</a></td><td><p>Here&rsquo;s the link to the <a href="https://dog.ceo/dog-api/">dog ceo API</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/integrating-with-other-people-s-libraries" target="_blank">Integrating with Other People's Libraries</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/integrating-with-other-people-s-libraries?t=6" target="_blank">00:00:06</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/libraries">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/integrating-with-other-people-s-libraries?t=15" target="_blank">00:00:15</a></td><td><p>Here&rsquo;s the link to <a href="https://popmotion.io/">Popmotion</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/integrating-with-other-people-s-libraries?t=159" target="_blank">00:02:39</a></td><td><p>Here&rsquo;s a link to <a href="https://unpkg.com/#/">unpkg</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/building-your-code-with-node-js" target="_blank">Building Your Code with Node.js</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/building-your-code-with-node-js?t=20" target="_blank">00:00:20</a></td><td><p>Here&rsquo;s the course on <a href="https://frontendmasters.com/courses/webpack-fundamentals/">Webpack4</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/building-your-code-with-node-js?t=49" target="_blank">00:00:49</a></td><td><p>Here&rsquo;s the link to <a href="https://nodejs.org/en/">Node.js</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/building-your-code-with-node-js?t=301" target="_blank">00:05:01</a></td><td><p>Here&rsquo;s a link to the <a href="https://parceljs.org/">Parcel documentation</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/building-your-code-with-node-js?t=552" target="_blank">00:09:12</a></td><td><p>Here&rsquo;s the link to <a href="https://www.npmjs.com/">npm</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/building-your-code-with-node-js?t=563" target="_blank">00:09:23</a></td><td><p>Make sure the version of popmotion used is 8.1.24</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/building-your-code-with-node-js?t=930" target="_blank">00:15:30</a></td><td><p>Here&rsquo;s a link to <a href="https://parceljs.org/">parcel</a></p>
+</td></tr>
+    </table>
+    <h2>Learning Git</h2>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/git-and-bash" target="_blank">Git and Bash</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/git-and-bash?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/git-and-bash">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/git-and-bash?t=66" target="_blank">00:01:06</a></td><td><p>Here&rsquo;s a link to <a href="https://git-scm.com/">Git</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/git-and-bash?t=116" target="_blank">00:01:56</a></td><td><p>Here&rsquo;s a link to the <a href="https://desktop.github.com/">Git GUI</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/git-and-bash?t=148" target="_blank">00:02:28</a></td><td><p>Here&rsquo;s a link to the <a href="https://www.sourcetreeapp.com/">Sourcetree Git GUI</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/git-and-bash?t=598" target="_blank">00:09:58</a></td><td><p>Here&rsquo;s a link to [explainshell](<a href="https://explainshell.com/">https://explainshell.com/</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/git-and-bash?t=1086" target="_blank">00:18:06</a></td><td><p>Here&rsquo;s the Frontend Masters&rsquo; <a href="https://frontendmasters.com/courses/full-stack/">course by Jem Young</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/working-with-git" target="_blank">Working with Git</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/working-with-git?t=332" target="_blank">00:05:32</a></td><td><p>Here&rsquo;s the Frontend Masters&rsquo; <a href="https://frontendmasters.com/courses/git-in-depth/">course taught by Nina Zakharenko</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/using-github" target="_blank">Using GitHub</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/using-github?t=26" target="_blank">00:00:26</a></td><td><p>Here&rsquo;s a link to <a href="https://github.com/">Github</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/using-github?t=738" target="_blank">00:12:18</a></td><td><p>Here&rsquo;s a link to <a href="https://choosealicense.com/">Choose a License</a></p>
+</td></tr>
+    </table>
+    <h2>Using Node.js</h2>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/node-js-server" target="_blank">Node.js Server</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/node-js-server?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/node">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/node-js-server?t=176" target="_blank">00:02:56</a></td><td><p>Tip: you can also find the &ldquo;integrated terminal&rdquo; under &ldquo;view&rdquo; on the top of your screen if you forget this shortcut</p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/server-routing-with-express" target="_blank">Server Routing with Express</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/server-routing-with-express?t=15" target="_blank">00:00:15</a></td><td><p>Tip: Press CTRL-C on your keyboard to stop the server</p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/server-routing-with-express?t=34" target="_blank">00:00:34</a></td><td><p><a href="https://expressjs.com/">https://expressjs.com/</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/server-routing-with-express?t=81" target="_blank">00:01:21</a></td><td><p>Grab the code from the <a href="https://btholt.github.io/intro-to-web-dev-v2/node">course website</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/server-routing-with-express?t=348" target="_blank">00:05:48</a></td><td><p>Here&rsquo;s the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random">documentation on Math.Random()</a></p>
+</td></tr>
+    </table>
+    <h3><a href="https://frontendmasters.com/courses/web-development-v2/deploying-and-final-thoughts" target="_blank">Deploying and Final Thoughts</a></h3>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/deploying-and-final-thoughts?t=5" target="_blank">00:00:05</a></td><td><p>Here&rsquo;s a link to the <a href="https://btholt.github.io/intro-to-web-dev-v2/deploying">course notes</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/deploying-and-final-thoughts?t=68" target="_blank">00:01:08</a></td><td><p>Here&rsquo;s the Frontend Masters&rsquo; course on <a href="https://frontendmasters.com/courses/serverless-aws/">Amazon AWS</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/deploying-and-final-thoughts?t=463" target="_blank">00:07:43</a></td><td><p>Here&rsquo;s a link to <a href="https://github.com/btholt/intro-to-web-dev-v2">Brian&rsquo;s Github page</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/deploying-and-final-thoughts?t=478" target="_blank">00:07:58</a></td><td><p>Here&rsquo;s the full list of <a href="https://btholt.github.io/intro-to-web-dev-v2/tweets/">feel-good tweets</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/deploying-and-final-thoughts?t=522" target="_blank">00:08:42</a></td><td><p>Here&rsquo;s a link to <a href="https://www.firsttimersonly.com/">First Timers Only</a></p>
+</td></tr>
+    </table>
+    <table>
+    <tr><td><a href="https://frontendmasters.com/courses/web-development-v2/deploying-and-final-thoughts?t=604" target="_blank">00:10:04</a></td><td><p>Hurray! You completed the course! Check out the next step in the <a href="https://frontendmasters.com/learn/beginner/">beginner learning path</a></p>
+</td></tr>
+    </table>
+    </body>
+</html>
