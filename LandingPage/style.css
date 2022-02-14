@@ -1,0 +1,89 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    background-color: #2383e6;
+    height: 85px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+ text-decoration: none;
+    padding: 0px 25px;
+    color: black;
+}
+li a:hover{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+main{
+    display: flex;
+    height: calc(100vh-100px);
+    align-items: center;
+    justify-content: center;
+}
+.hero-img{
+    width: auto;
+    height: 550px;
+    margin-left: 45px;
+    margin-top: 45px;
+}
+.content-left{
+    width: 30%;
+}
+main h1 {
+   font-size: 54px;
+   color: #2383e6;
+   text-transform: uppercase;
+   width: 100px;
+}
+main h2{
+    font-size: 25px;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+main p{
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 31.5px;
+    margin: 20px 0;
+}
+.cta{
+    padding: 9px 16px;
+    /* background-color: rgb(44, 44, 44); */
+    color: rgb(0, 0, 0);
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border: 2px solid #2383e6;
+    background-color: white;
+    color: #2383e6;
+}
+.cta:hover{ 
+    background-color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    color: aliceblue;
+}
+.signup-btn{
+    color: aliceblue;
+    background-color: rgb(14, 13, 13);
+    border-radius: 5px;
+    padding: 6px 15px;
+    margin-left: 29px;
+}
+.signup-btn:hover{
+    background-color: rgb(0, 0, 0);
+
+}
